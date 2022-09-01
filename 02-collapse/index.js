@@ -8,20 +8,20 @@ const visibleBtn = document.querySelector(".collapsible__action--hidden");
 
 
 document.querySelector("button").addEventListener("click", () => {
-  if (collapse.playState === "paused") {
+  if (visibleBtn.style.display == "block" && hiddenBtn.style.display == "none") {
+    visibleBtn.style.display = "none";
     hiddenBtn.style.display = "block";
-    visibleBtn.style.display = "none";   
-    collapse.play();
-    
-  } else {   
-    
+  } else {
     visibleBtn.style.display = "block";
     hiddenBtn.style.display = "none";
+  }
+  if (collapse.playState === "paused") {    
+    collapse.play();    
+  } else {   
     collapse.reverse();  
   } 
   
 });
-
 collapse.pause();
 visibleBtn.style.display = "block";
 hiddenBtn.style.display = "none";
