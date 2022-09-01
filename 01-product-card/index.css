@@ -1,0 +1,141 @@
+/* Смотри сколько снизу свободного места! Оно идеально подойдёт, чтобы писать твои стили! */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F6F6F6;
+}
+.products {
+    
+    max-width: 1180px;
+}
+.products__header {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 72px;
+    color: #000;
+}
+.cards {
+    margin: 40px 0 60px 0;
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 40px auto;     */
+    gap: 20px;
+   
+}
+.card {
+
+    /* box-sizing: border-box; */
+    flex: 1 1 380px; 
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    align-self: normal;
+    
+}
+
+.card__title {
+    margin-top: 24px;
+    padding: 0 24px;
+    font-family: Arial;
+    font-style: Black;
+    font-size: 24px;
+    line-height: 36px;
+    color: #2F2F2F;
+}
+.card__descr {
+    margin-top: 16px;
+    margin-bottom: 24px;
+    padding: 0 24px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2F2F2F;
+    font-weight: 400;
+    /* margin-top: 16px;
+    margin-bottom: 24px; */
+}
+.card__btn {
+    
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: auto;
+    margin-bottom: 24px;
+    background-color:#fff;
+    width: calc(100% - 48px);
+    height: 48px;
+    border: 2px solid #42940F;
+    border-radius: 8px;
+    color:#42940F;
+    font-family: Arial;
+    font-style: Black;
+    font-size: 18px; 
+    font-weight: 900;
+    line-height: 100%;   
+    text-align: center;
+}
+.card__btn_disabled {
+    background-color: #4E4E4E;
+    color: #fff;
+    border: none;
+}
+.card__btn:not([disabled]):hover {
+    background-color: #42940F;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+.card__btn:not([disabled]):active {
+    background-color: #1F5200;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+.image {
+    position: relative;
+}
+.image__new {
+    display: inline-block;
+    font-family: Arial;    
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #2F2F2F;
+    padding: 0 16px;
+    background-color: #FDCFF3;
+    border-radius: 8px;
+    position: absolute;
+    left: 16px;
+    top: 16px;
+}
+.image__last {
+    display: inline-block;
+    font-family: Arial;    
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #2F2F2F;
+    padding: 0 16px;
+    background-color: #FFCF56;
+    border-radius: 8px;
+    position: absolute;
+    left: 143px;
+    top: 16px;
+}
+
