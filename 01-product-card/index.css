@@ -90,7 +90,7 @@ body {
     line-height: 100%;   
     text-align: center;
 }
-.card__btn_disabled {
+.card__btn--disabled {
     background-color: #4E4E4E;
     color: #fff;
     border: none;
