@@ -32,13 +32,10 @@ body {
     display: flex;    
     justify-content: space-between;
     align-items: center;
-    /* margin: 40px auto;     */
     gap: 20px;
    
 }
 .card {
-
-    /* box-sizing: border-box; */
     flex: 1 1 380px; 
     flex-wrap: wrap;
     display: flex;
@@ -46,7 +43,7 @@ body {
     background-color: #fff;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    filter: drop-shadow(0 0 45px rgba(0, 0, 0, 0.18));
     align-self: normal;
     
 }
